@@ -1,7 +1,7 @@
 const discord = require("discord.js");
 const scanner = require("tesseract.js");
 
-const client = discord.Client();
+const client = new discord.Client();
 
 const dotconfig = require("dotenv").config();
 const prefix = "=";
@@ -26,7 +26,7 @@ client.on("message", async message => {
   
     if (command === "teks") {
          scanner.recognize(args[0], "eng", { logger: m => console.log(m) }).then(({ data: { text } }) => {
-             message.channel.send(text)
+             return message.channel.send(text);
          })
     }
 })
