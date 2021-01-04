@@ -1,7 +1,7 @@
 {
-  "name": "fastering18bot",
-  "version": "1.0.1",
-  "description": "Discord Bot nya Fastering18",
+  "name": "Scanner bot",
+  "version": "1.0.0",
+  "description": "Scanner discord bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
